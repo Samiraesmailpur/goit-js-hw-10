@@ -44,7 +44,7 @@ body {
 }
 
 .country-list,
-.additional-info {
+.info-list {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
