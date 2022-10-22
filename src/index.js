@@ -14,6 +14,9 @@ inputEl.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 function onSearch(e) {
   e.preventDefault();
   const nameCountry = inputEl.value.trim();
+  if (nameCountry === '') {
+    return;
+  }
   emptyMarkup();
 
   fetchCountries(nameCountry)
