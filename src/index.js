@@ -15,6 +15,7 @@ function onSearch(e) {
   e.preventDefault();
   const nameCountry = inputEl.value.trim();
   if (nameCountry === '') {
+    emptyMarkup();
     return;
   }
   emptyMarkup();
